@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".imageProcessing.ImageProcessing">
+    <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/imageSelect"
+    android:text="Select Image"/>
+    <ImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/imageProcess"
+    android:src="@drawable/font"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageFileText"/>
+
+    <Button android:id="@+id/btn_call_api"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/call_ocr_api"
+        android:textAllCaps="false" />
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/ocr_api_result"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/actual_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+    </ScrollView>
+
+</LinearLayout>
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--tools:context=".imageProcessing.ImageProcessing">-->
+    <!--<include layout="@layout/tool_bar"/>-->
+<!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_marginTop="?actionBarSize">-->
+    <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/imageProcess"-->
+        <!--android:src="@drawable/font"/>-->
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/imageText"-->
+        <!--android:text="Hello"-->
+        <!--/>-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:weightSum="2">-->
+        <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/imageSelect"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="Select Image"/>-->
+        <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/imageButton"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="Click"/>-->
+    <!--</LinearLayout>-->
+        <!--<ListView-->
+            <!--android:id="@+id/idRecyclerViewHorizontalList"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--/>-->
+<!--</LinearLayout>-->
+
+<!--</RelativeLayout>-->

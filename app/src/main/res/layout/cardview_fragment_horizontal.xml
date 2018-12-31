@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:contentPadding="7dp"
+    card_view:cardCornerRadius="7dp"
+    card_view:cardElevation="7dp"
+    card_view:cardBackgroundColor="#FF9800"
+    android:layout_margin="1dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/FragmentCardImageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/background"
+            />
+        <TextView
+            android:id="@+id/FragmentCardTextView"
+            android:textSize="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:text="@string/app_name"/>
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

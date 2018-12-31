@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".AnotherMedia">
+
+    <include layout="@layout/tool_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.5"
+        android:gravity="center"
+        android:orientation="vertical">
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/imageAlbum"
+            android:src="@drawable/album_art"
+            app:civ_border_color="#000"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/artistName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="#981213"
+            android:text="George Brown"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:ellipsize="marquee"
+            android:scrollHorizontally="true"
+            android:textSize="20sp"
+            android:id="@+id/songName"
+            android:textColor="#fff"
+            android:text="Podcast Name"/>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_weight="2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp">
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/previous"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/previous" />
+        <Button
+            android:id="@+id/playNew"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/pause" />
+        <Button
+            android:id="@+id/next"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/next" />
+    </LinearLayout>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="3.5">
+
+    </LinearLayout>
+</LinearLayout>
